@@ -1,26 +1,28 @@
-import { useState } from 'react'
-import './App.css'
-import Box1 from './Box1'
+import React from 'react';
+import "./App.css";
+import { Route } from "react-router-dom"
+import Parents from './components/Parents';
+import Application from './cantainer/Application';
+import System from './cantainer/System';
+import Library from './cantainer/Library';
+import User from './cantainer/User';
+import Adam from './cantainer/Adam';
 
-
-function App() {
-
-  const [show, setShow] = useState(false)
+const App = () => {
 
   return (
     <>
-    <button className='btn bg-danger' onClick={() => setShow(false)}>clear</button>
-      <div className="App">
-        <div className='initialbox' onClick={() => setShow(true)}>
-          {show ? <Box1 /> : null}
-
-        </div>
-
-      </div>
-      
+      <Route path="/" component={Parents} />
+      <Route path="/app" component={Application} />
+      <Route path="/system" component={System} />
+      <Route path="/library" component={Library} />
+      <Route path="/user" component={User} />
+      <Route path="/adam" component={Adam} />
     </>
 
   )
-}
 
+
+
+}
 export default App

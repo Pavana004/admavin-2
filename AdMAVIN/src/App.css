@@ -1,65 +1,19 @@
-body{
-    background-color: black;
-}
-.App{
+.parents{
     display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-
-.initialbox{
-     width: 500px;
-     height: 500px;
-     border: 2px solid gray;
-}
-
-.secondbox{
-    width: 5px;
-    height: 500px;
-    border: 2px solid gray;
-    margin-left: 250px;
-}
-.secondbox1{
-    width: 500px;
-    height: 500px;
-    border: 2px solid gray;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
+    flex-direction: column;
+    width: 200px;
+    height: fit-content;
     position: absolute;
-    margin-top: 250px
-}
-.cont{
-    display: flex;
-    position: relative;
-} 
-.box2{
-    width: 250px;
-    height: 250px;
-    border: 2px solid gray;
-    position: absolute;
-}
-.thirdbox{
-    width: 5px;
-    height: 250px;
-    border: 2px solid gray;
-    margin-left: 125px;
-    position:absolute;
-}
-
-.thirdbox1{
-    width:250px;
-    height: 125px;
-    border: 2px solid gray;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    position:absolute;
-    margin-top: 125px;
-
 }
 .btn{
-    margin-left: 440px;
-    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    margin: 8px;
+    color: white;
+}
+.application{
+    width: 200px;
+    height: fit-content;
+    position: relative;
+    margin-left: 221px;
 }
